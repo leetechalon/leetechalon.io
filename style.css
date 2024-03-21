@@ -43,7 +43,10 @@
     text-shadow: 0 0 10px transparent;
     font-weight: bold;
   }
-  
+  .title{
+  display: flex;
+  align-items: center;
+}
   nav ul li{
     display: inline-block;
     margin: 0 10px;
