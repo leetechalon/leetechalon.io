@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -212,7 +212,7 @@
         };
     }
 
-    document.body.addEventListener('click', function enableSound() {
+    document.body.addEventListener('load', function enableSound() {
         document.getElementById('music').play().then(() => {
             document.body.removeEventListener("load", enableSound); 
             playMusicOnScroll(); 
