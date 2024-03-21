@@ -221,7 +221,7 @@
         };
     }
 
-    document.body.addEventListener('load', function enableSound() {
+    document.body.addEventListener('click', function enableSound() {
         document.getElementById('music').play().then(() => {
             document.body.removeEventListener("click", enableSound); 
             playMusicOnScroll(); 
