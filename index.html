@@ -214,7 +214,7 @@
 
     document.body.addEventListener('click', function enableSound() {
         document.getElementById('music').play().then(() => {
-            document.body.removeEventListener("load",'click', enableSound); 
+            document.body.removeEventListener("load", enableSound); 
             playMusicOnScroll(); 
         }).catch(e => {
             console.error("Could not play audio on first click:", e);
