@@ -21,7 +21,10 @@
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
+      <div class="title">
+        <img src="event.png" alt="logo" width="40px">
       <label class="logo">Lee Techalon</label>
+      </div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#Event">Events</a></li>
@@ -218,9 +221,9 @@
         };
     }
 
-    document.body.addEventListener('click', function enableSound() {
+    document.body.addEventListener('load', function enableSound() {
         document.getElementById('music').play().then(() => {
-            document.body.removeEventListener("load", enableSound); 
+            document.body.removeEventListener("click", enableSound); 
             playMusicOnScroll(); 
         }).catch(e => {
             console.error("Could not play audio on first click:", e);
