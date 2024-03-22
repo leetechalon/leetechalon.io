@@ -38,13 +38,14 @@
     <div class="contant" id="home">
       <div class="sym">
         <h6>P.T.LeeCN College Engineering and Technology </h6>
+        <h5>Presented by</h5>
         <h1>Lee Techalon</h1>
         <h3>2k24</h3>
         <div id="timer"></div>
       </div>
     </div>
     <div class="contant" id="Event">
-      <h2 class="ename">Events For All Departments </h3>
+      <h3 class="ename">Events For All Departments </h3>
         <div id="event">
             <h2 class="etech">Technical Events</h2>
             <div class="tech">
@@ -250,7 +251,7 @@
               const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
               // Display the countdown
-              document.getElementById('timer').innerHTML = `${days} D- ${hours} H- ${minutes} M - ${seconds} S`;
+              document.getElementById('timer').innerHTML = `${days} <p>D</p> - ${hours} <p>H</p> - ${minutes} <p>M</p> - ${seconds} <p>S</p>`;
             }
     //-----------------------------End of the srcipt timer----------------------------------
         function playMusic() {
