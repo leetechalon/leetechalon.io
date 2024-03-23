@@ -246,7 +246,7 @@ footer{
 }
 #contact{
   backdrop-filter: blur(40px);
-  height: 200vh;
+  height: 250vh;
   margin-top: 100vh;
 }
 .map
@@ -280,7 +280,7 @@ footer{
   bottom: 0;
   position: fixed;
   width:100vw;
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 30px;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
