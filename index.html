@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <div class="main">
       <audio autoplay loop id="music">
         <source src="burnup.mp3" type="audio/mpeg">
@@ -49,7 +49,7 @@
             <h2 class="etech">Technical Events</h2>
             <div class="tech">
                 <div class="dept">
-                    <img src="cse.jpeg" alt="cse" class="dlogo">
+                    <img src="cse.png" alt="cse" class="dlogo">
                     <h4>CSE/IT</h4>
                     <h4>🖥️ PIЯΛƬΣ FӨXXZ 📡</h4>
       
@@ -91,11 +91,19 @@
                     <a href="LEE MEXTRON.pdf" download class="learn">Learn more</a>
                     <a href="https://forms.gle/8G2dujWr51VvyJmf7" class="learn">RegisterNow</a>
                 </div>
-                
-            </div>
-           <div class="nontech">
-              ECE
-              <p class="ECE">https://sites.google.com/view/electrolee2k24</p>
+                <div class="dept">
+                  <img src="ece.jpeg" alt="ece" class="dlogo">
+                  <h4>ECE</h4>
+                  <h4>Electrolee</h4>
+                  <ol>
+                      <li>Paper Presentation</li>
+                      <li>Tricky Circuit</li>
+                      <li>Circuit Debugging</li>
+                      <li>Technical Quiz</li>
+                  </ol>
+                  <a href="Event Rules.pdf" download class="learn">Learn more</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQdOGNdvsxE-3zyCLTAYq5FEipSCj_xg-soW-i5EOcuTRmkQ/viewform?usp=sf_link" class="learn">RegisterNow</a>
+              </div>
             </div>
           
             <h2 class="etech">
@@ -106,17 +114,20 @@
                     <ol >
                         <li>ad zap</li>
                         <li>connection</li>
-                        <li>photography</li>
+                        <li>scan to find</li>
+                        <li>Table tennis</li>
                         <li>film fest</li>
                         <li>baloon & cups</li>
                         <li>treasure hunt</li>
-                        <li>chess</li>
-                        <li>scan to find</li>
+                        <li>Badminton</li>
+                        <li>sign Language</li>
+                        <li>Mini Miltary</li>
                         <li>tuna topia</li>
-                        <li>free fire</li>
                         <li>carrom</li>
+                        <li>chess</li>
+                        <li>photography</li>
                         <li>stump throw</li>
-                        
+                        <li>free fire</li>
                     </ol>
                     <div >
                       <a href="cse.png" download class="learn">Learn more</a>
@@ -224,6 +235,23 @@
 
 
       <script>
+        document.onkeydown = (e) => {
+    if (e.key == 123) {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+    }
+    if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+    }
+};
      //----------------------------Timer for The symposium---------------------------------- 
         const targetDate = new Date('2024-03-28T00:00:00');
             // Update the countdown every second
