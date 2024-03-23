@@ -36,16 +36,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  label.logo{
-    font-size: 30px;
-    line-height: 80px;
-    background: linear-gradient(40deg,#f2015b,#ed02f1,#0404f8);
-    background-clip: text;
-    color: transparent;
-    font-family: myfont;
-    padding: 0 10px;
-    text-shadow: 0 0 10px transparent;
-    font-weight: bold;
+  .btn{
+    border: none;
+    outline: none;
+  }
+  .logo{
+    width:500px;
   }
   .title{
   display: flex;
@@ -133,9 +129,9 @@
     align-items: center;
     justify-content: center;
   }
-  .sym h6 ,.sym h5{
-    font-family:fonts;
-    color:rgb(255, 0, 255);
+  .sym h4{
+    font-family:myfont;
+    color:#ff00ff;
     font-size: 35px;
     text-shadow: 0 0 20px blue;
     font-weight: bolder;
@@ -293,13 +289,23 @@ footer{
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
- @media (max-width: 900px){
+@media (max-width:1220px) {
+  .logo{
+    width:300px;
+  }
+  
+}
+ @media (max-width: 1000px){
     .checkbtn{
       display: block;
       font-size: 20px;
     }
     label.logo{
-      font-size: 40px;
+      font-size: 10px;
+    }
+    .btn{
+      font-size: 10px;
+      outline: none;
     }
     ul{
       position: fixed;
@@ -331,8 +337,8 @@ footer{
   }
   @media (max-width: 600px){
   
-    label.logo{
-      font-size: 16px;
+    .logo{
+      width:200px;
     }
     .sym h5,.sym h6{
       font-size: 20px;
@@ -367,5 +373,10 @@ footer{
     footer{
       bottom: 0;
       font-size: 20px;
+    }
+  }
+  @media (max-width: 400px){
+    .logo{
+      width: 150px;
     }
   }
